@@ -16,10 +16,10 @@ while True:
             nodes = nodes + sep
             m = 2 # initial number of links per node
             j = int(m * random.random())+2 # always add minimum of two because random function can give back zero
-            for l in range(j): # create multiple links per node 
+            for l in range(j): # create links per node 
                 t = x+int(3 * random.random())+1
-                t = t if t < i-1 else i-1
-                v = int(4 * random.random())+1
+                t = t if t < i-1 else i-1 # limit target to 'highest' node
+                v = int(4 * random.random())+1 # weight of the link connecting two nodes 
                 link = {
                     "source": x,
                     "target": t,
@@ -35,6 +35,6 @@ while True:
         links
     ]
     }
-    # yes, I like to mess around with dictionaries and strings and replace, could be done more neat with json dump stuff.
+    # yes, I like to mess around with dictionaries, str, and replace, could be done more neat with json dump stuff.
     doc = str(doc).replace("'",'"').replace('["',"[").replace('"]',"]")
     print(doc)

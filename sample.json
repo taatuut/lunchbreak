@@ -1,0 +1,23 @@
+{
+    timestamp: ISODate("2021-12-23T12:00:00.000Z"),
+    conversationId: 'A',
+    toId: 'd4d613e1-932d-48ac-a945-21e6d6765fa0',
+    fromId: 'c4b4a043-5da3-414b-b4a0-bdb03864085d',
+    depth: 2
+  }
+  
+  {
+    timestamp: ISODate("2021-12-23T12:01:00.000Z"),
+    conversationId: 'B',
+    toId: 'a1d18ae4-d877-4c2c-9467-7fb76713e330',
+    fromId: 'd4d613e1-932d-48ac-a945-21e6d6765fa0',
+    depth: 8
+  }
+  
+  {
+    timestamp: ISODate("2021-12-23T11:00:00.000Z"),
+    conversationId: 'C',
+    toId: '99a8d824-2193-409f-9eb5-a2cb1962b2d2',
+    fromId: 'd4d613e1-932d-48ac-a945-21e6d6765fa0',
+    depth: 4
+  }
