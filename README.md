@@ -37,6 +37,8 @@ Add the HTTPS endpoint url to the html file, open it and relax.
 
 Find an example at https://stitch-statichosting-prod.s3.amazonaws.com/6318868fcb1c9f1272f639e3/index.html
 
+![lb](https://user-images.githubusercontent.com/2260360/189126305-2073c8e9-640e-42df-ad8e-d1aa74a22eb8.png)
+
 # remarks
 
-The background color of teh page is MongoDB green.
+The background color of the page is MongoDB green.
