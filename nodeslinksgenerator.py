@@ -1,20 +1,22 @@
 import random
+import string
 
 while True:
     nodes = ""
     links = ""
-    n = 8 # initial number of nodes
+    n = 12 # initial number of nodes
     i = int(n * random.random())+4 # always add minimum of two because random function can give back zero, but add four for bit longer funnel by default
     sep = ","
     for x in range(i):
         node = {
             "node": x,
-            "name": "node"+str(x)
+            #"name": "node"+str(x)
+            "name": ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(n))
         }
         nodes = nodes + str(node)
         if x < i-1:
             nodes = nodes + sep
-            m = 2 # initial number of links per node
+            m = 4 # initial number of links per node
             j = int(m * random.random())+2 # always add minimum of two because random function can give back zero
             for l in range(j): # create links per node 
                 t = x+int(3 * random.random())+1
