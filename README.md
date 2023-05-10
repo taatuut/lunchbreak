@@ -18,7 +18,7 @@ exec zsh
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/emilzegers/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap mongodb/brew
 brew install mongodb-database-tools
@@ -60,7 +60,7 @@ If you created an HTTP Endpoint for the first time in the previous step, you now
 
 ## hosting file
 
-NOTE: Hosting is no longer available with the free M0 tier, so go for a paid version like an M2 or use another (free) place where you can host static files.
+NOTE: Hosting is no longer available with the free M0 tier, so go for a paid version like an M2 or use another (free) place where you can host static files. GitHub Pages will work too.
 
 To use hosting on Atlas, in the app, enable Hosting and delete the existing `index.html` (or rename to keep it), and upload your edited `index.html`, check you added your own HTTPS Endpoint first.
 
@@ -82,7 +82,7 @@ Open http://localhost:9000/
 
 Open the uploaded html file in your browser and relax.
 
-You can find an example (that might or might not be working) at https://stitch-statichosting-prod.s3.amazonaws.com/6318868fcb1c9f1272f639e3/index.html
+You can find an example (that might or might not be working) at https://taatuut.github.io/
 
 ![lb](https://user-images.githubusercontent.com/2260360/189126305-2073c8e9-640e-42df-ad8e-d1aa74a22eb8.png)
 
